@@ -16,7 +16,7 @@ export async function getInvites(app: FastifyInstance) {
       '/organizations/:slug/invites',
       {
         schema: {
-          tags: ['Invites'],
+          tags: ['invites'],
           summary: 'Get all organization invites',
           security: [{ bearerAuth: [] }],
           params: z.object({
